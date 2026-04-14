@@ -1,5 +1,4 @@
 {
-  "buildCommand": "bun run build",
-  "outputDirectory": "dist",
-  "framework": "tanstack-start"
+  "outputDirectory": "dist/client",
+  "framework": "static"
 }
