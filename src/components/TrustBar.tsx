@@ -1,3 +1,5 @@
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
 const stats = [
   { number: "200+", label: "Clients in Delhi" },
   { number: "3 Yrs", label: "Average Result Duration" },
@@ -6,11 +8,13 @@ const stats = [
 ];
 
 export default function TrustBar() {
+  const [ref, isVisible] = useScrollReveal();
+
   return (
     <section className="bg-petal py-10">
-      <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 px-5 md:grid-cols-4">
-        {stats.map((s) => (
-          <div key={s.label} className="trust-stat">
+      <div ref={ref} className={`mx-auto grid max-w-5xl grid-cols-2 gap-4 px-5 md:grid-cols-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        {stats.map((s, i) => (
+          <div key={s.label} className="trust-stat" style={{ transitionDelay: `${i * 100}ms` }}>
             <div className="trust-stat-number">{s.number}</div>
             <div className="trust-stat-label">{s.label}</div>
           </div>
