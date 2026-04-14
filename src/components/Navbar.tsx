@@ -25,12 +25,12 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-5 md:py-4">
         <div className="flex flex-col">
-          <span className="font-display text-xl font-bold italic text-ink">
+          <span className="font-display text-lg font-bold italic text-ink md:text-xl">
             Elora
           </span>
-          <span className="font-body -mt-1 text-[0.6rem] tracking-widest text-muted-foreground uppercase">
+          <span className="font-body -mt-1 hidden text-[0.6rem] tracking-widest text-muted-foreground uppercase sm:block">
             PMU & Korean Esthetics
           </span>
         </div>
