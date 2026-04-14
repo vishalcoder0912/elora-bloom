@@ -71,17 +71,19 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="bg-warm-white/95 backdrop-blur-lg border-t border-border px-5 py-6 md:hidden">
-          {["services", "results", "pricing", "faq", "contact"].map((s) => (
-            <button
-              key={s}
-              onClick={() => scrollTo(s)}
-              className="font-body block w-full py-3 text-left text-base capitalize text-foreground"
-            >
-              {s.charAt(0).toUpperCase() + s.slice(1)}
-            </button>
-          ))}
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 w-full text-center">
+        <div className="bg-warm-white/98 backdrop-blur-xl border-t border-border px-5 py-6 md:hidden animate-fade-up">
+          <div className="flex flex-col gap-1">
+            {["services", "results", "pricing", "faq", "contact"].map((s) => (
+              <button
+                key={s}
+                onClick={() => scrollTo(s)}
+                className="font-body block w-full py-3.5 text-left text-base capitalize text-foreground border-b border-border/50 last:border-0 hover:bg-petal/50 transition-colors rounded-md px-3"
+              >
+                {s === "results" ? "Results" : s === "contact" ? "Contact" : s.charAt(0).toUpperCase() + s.slice(1)}
+              </button>
+            ))}
+          </div>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary mt-6 w-full text-center">
             Book Now
           </a>
         </div>
