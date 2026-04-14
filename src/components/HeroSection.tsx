@@ -4,12 +4,12 @@ const WHATSAPP_URL = "https://wa.me/919877695827?text=Hi+Elora%2C+I%27m+interest
 
 export default function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-screen items-end justify-center overflow-hidden pb-16 md:items-center md:pb-0">
       {/* Background image */}
       <img
         src={heroImage}
         alt="Lip blushing Delhi — natural pink lip tint by Elora Korean PMU"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-top md:object-center"
         width={1920}
         height={1080}
         loading="eager"
