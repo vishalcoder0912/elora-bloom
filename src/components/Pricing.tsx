@@ -28,7 +28,7 @@ export default function Pricing() {
         <h2 className="section-heading">Lip Blushing Cost in Delhi</h2>
         <p className="section-subtext">Transparent pricing. No hidden fees. Free consultation included.</p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {plans.map((p) => (
             <div key={p.name} className={`pricing-card ${p.featured ? "pricing-card-featured" : ""}`}>
               {p.featured && (

@@ -10,7 +10,7 @@ export default function LeadForm() {
       <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 md:items-center">
         {/* Left */}
         <div>
-          <h2 className="font-display text-3xl font-bold italic text-primary-foreground md:text-4xl">
+          <h2 className="font-display text-2xl font-bold italic text-primary-foreground sm:text-3xl md:text-4xl">
             Your Best Lips Are One Appointment Away
           </h2>
           <p className="font-body mt-4 text-sm text-primary-foreground/70">
