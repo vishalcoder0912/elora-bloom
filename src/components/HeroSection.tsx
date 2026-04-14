@@ -9,7 +9,7 @@ export default function HeroSection() {
       <img
         src={heroImage}
         alt="Lip blushing Delhi — natural pink lip tint by Elora Korean PMU"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-[center_40%] md:object-center"
         width={1920}
         height={1080}
         loading="eager"
