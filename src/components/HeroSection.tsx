@@ -9,7 +9,7 @@ export default function HeroSection() {
       <img
         src={heroImage}
         alt="Lip blushing Delhi — natural pink lip tint by Elora Korean PMU"
-        className="absolute inset-0 h-full w-full object-cover object-[center_40%] md:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-top md:object-center"
         width={1920}
         height={1080}
         loading="eager"
@@ -17,7 +17,7 @@ export default function HeroSection() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(28,16,20,0.55)] via-[rgba(28,16,20,0.4)] to-[rgba(28,16,20,0.65)]" />
 
-      <div className="relative z-10 mx-auto max-w-3xl px-5 pt-32 text-center md:pt-0">
+      <div className="relative z-10 mx-auto max-w-3xl px-5 text-center">
         {/* Trust badge */}
         <div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
           <span className="text-gold text-sm">★</span>
