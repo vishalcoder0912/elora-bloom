@@ -26,7 +26,7 @@ export default function HeroSection() {
           </span>
         </div>
 
-        <h1 className="animate-fade-up font-display text-5xl font-bold italic leading-tight text-white md:text-7xl" style={{ animationDelay: "0.1s" }}>
+        <h1 className="animate-fade-up font-display text-3xl font-bold italic leading-tight text-white sm:text-5xl md:text-7xl" style={{ animationDelay: "0.1s" }}>
           Lip Blushing in Delhi
         </h1>
 
